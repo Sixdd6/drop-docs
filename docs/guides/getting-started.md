@@ -81,15 +81,12 @@ Setup URL: http://localhost:3000/setup?key=abc123def456ghi789jkl012mno345pqr678s
 
 **Copy both the setup key and the setup URL** - you'll need them for the next step.
 
-:::tip
-If you can't find the setup key or URL, restart the container and check the logs again:
 
+> :speech_balloon: If you can't find the setup key or URL, restart the container and check the logs again.
 ```bash
 docker-compose restart drop
 docker-compose logs drop
 ```
-
-:::
 
 ## Step 3: Configure Metadata Providers
 
@@ -123,10 +120,7 @@ For more information, see [PCGamingWiki Configuration](../metadata/pcgamingwiki.
 2. **The setup key will be automatically included** in the URL
 3. **Create your admin account** with a secure username and password
 
-[:::warning]
-```text
-Keep your admin credentials secure - you'll need them to manage your Drop instance!
-```
+> :warning: Keep your admin credentials secure - you'll need them to manage your Drop instance!
 
 ## Step 5: Configure Your Library
 
@@ -134,7 +128,8 @@ Keep your admin credentials secure - you'll need them to manage your Drop instan
 
 Drop supports two library formats:
 
-#### Drop-style (Recommended)
+- #### Drop-style (Recommended)
+In this format every game must have a unique folder within the library with either subfolders for each version or an archive for each version.
 
 ```
 /library/
@@ -149,7 +144,8 @@ Drop supports two library formats:
     version1.zip
 ```
 
-#### Flat-style (Compatibility)
+- #### Flat-style (Compatibility)
+In this format games can either be a single subfolder or an archive. The downside to this format is that it doesn't support delta patching for updates.
 
 ```
 /library/
@@ -183,9 +179,7 @@ For detailed information, see [Library Sources](../library.md).
 4. **Select the correct game** from the search results
 5. **Confirm the import** - this links the folder to game metadata
 
-:::tip
-Game metadata import only happens once per game. This pulls in descriptions, images, and other metadata.
-:::
+> :speech_balloon: Game metadata import only happens once per game. This pulls in descriptions, images, and other metadata.
 
 ### Importing Game Versions
 
@@ -193,12 +187,9 @@ Game metadata import only happens once per game. This pulls in descriptions, ima
 2. **Wait for processing** - Drop will scan all files and generate checksums
 3. **Review the import** - check file count and size
 
-:::tip
-If importing games in archive format note that currently only zip is supported, other formats will be supported in future updates.:::
+> :speech_balloon: If importing games in archive format note that currently only zip is supported, other formats will be supported in future updates.
 
-:::tip
-Version imports happen for each update. This generates the data clients need to download games.
-:::
+> :speech_balloon: Version imports happen for each update. This generates the data clients need to download games.
 
 ## Step 7: Set Up Client Access
 
