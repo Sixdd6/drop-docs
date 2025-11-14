@@ -193,6 +193,10 @@ Game metadata import only happens once per game. This pulls in descriptions, ima
 3. **Review the import** - check file count and size
 
 :::tip
+If importing games in archive format note that currently only zip is supported, other formats will be supported in future updates.
+:::
+
+:::tip
 Version imports happen for each update. This generates the data clients need to download games.
 :::
 
