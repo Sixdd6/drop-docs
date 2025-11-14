@@ -1,8 +1,8 @@
 # Exposing your instance
-Exposing your instance allows it to be accessible from other computers than the one you're hosting it on.
+Exposing your instance allows it to be accessible across your network or over the internet.
 
 ## Setting `EXTERNAL_URL`
-Drop uses `EXTERNAL_URL` for creating invitation links, OIDC redirects, and everything else. It should be passed as an environment variable, and include the protocol, ip/domain, and port (if applicable). Examples include:
+Drop uses the `EXTERNAL_URL` environment variable for creating invitation links, OIDC redirects, and everything else. It should include the protocol, ip/domain, and port (if applicable). Examples include:
 - `http://192.168.0.100:3000`
 - `https://drop.my.domain/`
 - `http://drop.home.arpa:3000`
@@ -16,11 +16,15 @@ http://[instance IP]:3000
 as the connection URL when setting up your Drop client.
 
 ## Reverse Proxy
-If you are unsure how to set up a reverse proxy, or even what one is, this guide isn't for you. There are far better guides out there, so follow them to set up your reverse proxy.
-
 There is no special configuration required to run Drop behind a reverse proxy.
 
-## VPN
-If you are unsure how to setup a VPN for remote access, please find and follow a far better guide than this one. 
+If you are unsure how to set up a reverse proxy, there are great guides available on YouTube, try searching for "setting up nginx proxy manager" for a guide.
 
-Accessing Drop over a VPN works very similarly to [accessing via LAN](#lan), so follow those steps.
+## VPN
+Connecting to your Drop instance via a VPN can be achieved in many ways. The simplest is to use a VPN service that comes with its own client, these often encrypt all traffic to secure your connection.
+
+These are some of the most commonly recommended:
+- Private Internet Access
+- Mulvad
+
+We offer no official support for setting up any vpn service.
