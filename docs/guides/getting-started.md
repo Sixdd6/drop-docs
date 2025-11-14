@@ -228,6 +228,8 @@ For advanced exposure options, see [Exposing Your Instance](exposing.md).
 - **Set up authentication** - see [Authentication](../authentication/) for OIDC options
 - **Manage permissions** for different user roles
 
+> :speech_balloon: For a guide on inviting users see [User Accounts](user-accounts.md)
+
 ### Library Management
 
 - **Add multiple library sources** to combine different game collections
