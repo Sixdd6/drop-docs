@@ -3,7 +3,7 @@ Simple authentication (or simple auth) is a basic username and password combinat
 Simple authentication works on a system of invites.
 
 ## Creating an invite
-For a detailed guide to creating invites see [User Accounts](../guides/user_accounts.md)
+For a detailed guide to creating invites see [User Accounts](../guides/user-accounts.md)
 
 ## Disabling simple auth
 If you've configured another authentication mechanism, you can disable simple by setting the environment variable `DISABLE_SIMPLE_AUTH` to "true".
