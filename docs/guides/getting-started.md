@@ -123,9 +123,9 @@ For more information, see [PCGamingWiki Configuration](../metadata/pcgamingwiki.
 2. **The setup key will be automatically included** in the URL
 3. **Create your admin account** with a secure username and password
 
+[:::warning]
 ```text
-[:::warning
-](https://github.com/Sixdd6/drop-docs/edit/main/docs/guides/getting-started.md)Keep your admin credentials secure - you'll need them to manage your Drop instance.
+Keep your admin credentials secure - you'll need them to manage your Drop instance!
 ```
 
 ## Step 5: Configure Your Library
